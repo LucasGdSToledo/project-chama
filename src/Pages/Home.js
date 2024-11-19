@@ -1,16 +1,36 @@
 import React from 'react';
-import logo from '../chama2.png'; 
 import './Home.css';
 
 const Home = () => {
   return (
-    <div className="home-container">
-      <img src={logo} alt="logo chama" className="home-logo" />
-      <h1 className="home-title">Bem-vindo ao Chama</h1>
-      <p className="home-text">Sua ferramenta de denúncia de focos de incêndio.</p>
-      <button className="home-button">Reportar foco de incêndio</button>
+    <div className="App">
+      {/* Navbar */}
+      <nav className="navbar">
+      <div className="nav-info"><a href="Sobre">Sobre</a></div>
+        <div className="nav-links">
+          <a href="#home">Home</a>
+          <a href="#listagem">Listagem</a>
+          <a href="#mapa">Mapa</a>
+        </div>
+      </nav>
+
+      {/*texto */}
+      <section className="reportar" id="reportar">
+        <div className="report-content">
+          <h2>Reporte um foco de incêndio</h2>
+          <p>
+            Sua contribuição é fundamental para proteger o meio ambiente e evitar
+            a propagação de incêndios. Informe a localização e outros detalhes
+            importantes para que possamos agir rapidamente. Cada denúncia conta e
+            ajuda a preservar nosso ecossistema.
+          </p>
+          <button className="report-button">Reportar</button>
+        </div>
+        <img src="/images/bombeiros.png" alt="bombeiros" className="report-image"
+        />
+      </section>
     </div>
   );
-};
+}
 
 export default Home;
