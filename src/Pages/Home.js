@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.css';
-
+import bombeiros from './images/bombeiros.png';
 const Home = () => {
   return (
     <div className="App">
@@ -26,7 +26,7 @@ const Home = () => {
           </p>
           <button className="report-button">Reportar</button>
         </div>
-        <img src="/images/bombeiros.png" alt="bombeiros" className="report-image"
+        <img src={bombeiros} alt="bombeiros" className="report-image"
         />
       </section>
     </div>
