@@ -4,7 +4,7 @@ import bombeiros from './images/bombeiros.png';
 const Home = () => {
   return (
     <div className="App">
-      {/* Navbar */}
+
       <nav className="navbar">
       <div className="nav-info"><a href="Sobre">Sobre</a></div>
         <div className="nav-links">
@@ -14,7 +14,7 @@ const Home = () => {
         </div>
       </nav>
 
-      {/*texto */}
+
       <section className="reportar" id="reportar">
         <div className="report-content">
           <h2>Reporte um foco de incêndio</h2>
