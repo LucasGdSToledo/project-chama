@@ -7,7 +7,7 @@ const Home = () => {
     <div className="App">
 
       <nav className="navbar">
-      <div className="nav-info"><Link to="/Sobre.js">Sobre</Link></div>
+      <div className="nav-info"><Link to="/Sobre.js">Sobre</Link></div> 
         <div className="nav-links">
         <Link to="/Home.js">Home</Link>
             <Link to="/Listagem.js">Listagem</Link>
