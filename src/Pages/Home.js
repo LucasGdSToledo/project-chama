@@ -1,16 +1,17 @@
 import React from 'react';
 import './Home.css';
 import bombeiros from './images/bombeiros.png';
+import {Link, Outlet} from "react-router-dom";
 const Home = () => {
   return (
     <div className="App">
 
       <nav className="navbar">
-      <div className="nav-info"><a href="Sobre">Sobre</a></div>
+      <div className="nav-info"><Link to="/Sobre.js">Sobre</Link></div>
         <div className="nav-links">
-          <a href="#home">Home</a>
-          <a href="#listagem">Listagem</a>
-          <a href="#mapa">Mapa</a>
+        <Link to="/Home.js">Home</Link>
+            <Link to="/Listagem.js">Listagem</Link>
+            <Link to="/Mapa.js">Mapa</Link>
         </div>
       </nav>
 
@@ -32,5 +33,5 @@ const Home = () => {
     </div>
   );
 }
-
+<Outlet />
 export default Home;
